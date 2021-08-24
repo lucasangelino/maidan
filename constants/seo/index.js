@@ -4,4 +4,9 @@ export const SEO_PROPS = {
     description: "Blog App for developers",
     favicon: "favicon.ico",
   },
+  article: {
+    title: "Article",
+    description: "Article App for developers",
+    favicon: "favicon.ico",
+  },
 };
