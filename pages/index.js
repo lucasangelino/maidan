@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <>
       <SEO {...mainView} />
+      <div>mainView</div>
     </>
   );
 }

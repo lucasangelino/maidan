@@ -7,6 +7,6 @@ export const SEO_PROPS = {
   article: {
     title: "Article",
     description: "Article App for developers",
-    favicon: "favicon.ico",
+    favicon: "",
   },
 };
