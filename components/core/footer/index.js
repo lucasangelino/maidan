@@ -26,6 +26,7 @@ const Logo = () => {
   );
 };
 
+// TODO: remove react-icons dependency and use only svg-icons
 const SocialButton = ({ children, label, href }) => {
   return (
     <chakra.button
