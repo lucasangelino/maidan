@@ -1,4 +1,4 @@
-export const SEO = {
+export const SEO_PROPS = {
   mainView: {
     title: "Blog",
     description: "Blog App for developers",
