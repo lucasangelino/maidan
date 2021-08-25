@@ -9,6 +9,7 @@ import {
   VisuallyHidden,
 } from "@chakra-ui/react";
 import { Instragram } from "../../ui/icons/instagram";
+// TODO: Need a custom logo
 import { Logo } from "../../ui/icons/logo";
 import { ReactNode } from "react";
 
