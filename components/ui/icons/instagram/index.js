@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function Instragram(props) {
+export function Instragram(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -55,5 +55,3 @@ function Instragram(props) {
     </svg>
   );
 }
-
-export default Instragram;
