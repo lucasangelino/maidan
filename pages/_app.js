@@ -6,7 +6,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
       <Component {...pageProps} />
-      <Footer />
+      {/* TODO: Move footer to Layout */}
+      {/* <Footer /> */}
     </ChakraProvider>
   );
 }
