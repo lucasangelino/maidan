@@ -4,12 +4,18 @@ import Footer from "../footer";
 import styles from "./layout.module.css";
 
 export default function Layout({ children }) {
-  const { container } = styles;
+  const { container, navbar, content, footer } = styles;
   return (
     <>
-      <Navbar />
-      <div className={container}>{children}</div>
-      <Footer />
+      <div className={container}>
+        <div className={navbar}>
+          <Navbar />
+        </div>
+        <div className={content}>{children}</div>
+        <div className={footer}>
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }

@@ -2,5 +2,27 @@
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "content content sidebar"
+    "footer footer footer";
+}
+
+.navbar {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
 }
