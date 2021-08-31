@@ -1,4 +1,6 @@
+import { Instragram } from "../../ui/icons/instagram/";
 import styles from "./navbar.module.css";
+
 export default function Navbar() {
   const { navbar, actions, searchbox, socialmedia, mediabutton } = styles;
   return (
@@ -7,9 +9,9 @@ export default function Navbar() {
       <div className={actions}>
         <input className={searchbox} type="text" placeholder="Search" />
         <div className={socialmedia}>
-          <div className={mediabutton}>Face</div>
-          <div className={mediabutton}>Inta</div>
-          <div className={mediabutton}>You</div>
+          <div className={mediabutton}>
+            <Instragram height={40} />
+          </div>
         </div>
       </div>
     </div>
