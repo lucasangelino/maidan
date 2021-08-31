@@ -1,9 +1,8 @@
 .container {
-  width: 100%;
   margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-columns: 50px 50px 50px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "header header header"
