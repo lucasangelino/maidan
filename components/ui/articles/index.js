@@ -9,6 +9,7 @@ export default function Articles({ articles }) {
           title={article.title}
           content={article.content}
           readTime={article.readTime}
+          topic={article.topic}
         />
       ))}
     </div>

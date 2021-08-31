@@ -3,12 +3,12 @@
   margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header"
-    "content content sidebar"
-    "footer footer footer";
+    "header header header header header"
+    ". content content sidebar ."
+    "footer footer footer footer footer";
 }
 
 .navbar {
@@ -21,11 +21,14 @@
 
 .sidebar {
   grid-area: sidebar;
+  margin: 0 auto;
 }
 
 .content {
   grid-area: content;
+  /* place content center */
+  margin: 0 auto;
   height: 100%;
-  padding: 0 400px;
+  padding: 0;
   width: 100%;
 }

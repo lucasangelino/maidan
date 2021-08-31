@@ -7,8 +7,8 @@ export default function Navbar() {
     <div className={navbar}>
       <div>logo</div>
       <div className={actions}>
-        <input className={searchbox} type="text" placeholder="Search" />
-        <div className={socialmedia}></div>
+        {/* <input className={searchbox} type="text" placeholder="Search" /> */}
+        {/* <div className={socialmedia}></div> */}
       </div>
     </div>
   );

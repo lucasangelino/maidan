@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   width: 25%;
-  background: rgb(178, 16, 211);
+  max-width: 100px;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 }
