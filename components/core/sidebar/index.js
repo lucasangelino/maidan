@@ -1,16 +1,25 @@
+import Card from "../../ui/cards";
+const recomendations = [
+  {
+    title: "Recom1",
+  },
+  {
+    title: "Recom2",
+  },
+  {
+    title: "Recom2",
+  },
+];
 export default function Sidebar() {
   return (
     <>
       <div>
-        <article>
-          <h1>Article 1</h1>
-        </article>
-        <article>
-          <h1>Article 1</h1>
-        </article>
-        <article>
-          <h1>Article 1</h1>
-        </article>
+        <h4>Recomendaciones</h4>
+      </div>
+      <div>
+        {recomendations.map((recom, index) => (
+          <Card key={index} title />
+        ))}
       </div>
     </>
   );
