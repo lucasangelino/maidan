@@ -1,8 +1,17 @@
 .card {
-  height: 15rem;
-  width: 20rem;
+  height: 15em;
+  width: 20em;
   background-color: #d12727;
   border-radius: 5px;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 1em;
+  margin: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 15em;
+    width: 100%;
+    background-color: #d12727;
+    border-radius: 5px;
+  }
 }

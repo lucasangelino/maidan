@@ -1,5 +1,4 @@
 .container {
-  position: relative;
   margin: 0 auto;
   padding: 0;
   display: grid;
@@ -21,7 +20,7 @@
 
 .sidebar {
   grid-area: sidebar;
-  margin: 0 auto;
+  margin: 1em 5em;
 }
 
 .content {
@@ -29,12 +28,10 @@
   margin: 0 auto;
   height: 100%;
   padding: 0;
-  width: 90%;
+  width: 100%;
   max-width: 50rem;
-  padding: 1rem;
 }
 
-/* change layout on mobile */
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
@@ -44,5 +41,6 @@
       "content"
       "sidebar"
       "footer";
+    width: 100%;
   }
 }
