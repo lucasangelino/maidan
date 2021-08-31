@@ -7,7 +7,7 @@ export default function Filters({ filters }) {
   return (
     <div className={filterList}>
       {filters.map((filter, index) => {
-        return <Bagde key={index} title={filter.title} />;
+        return <Bagde key={index} title={filter.title} style={filter.style} />;
       })}
     </div>
   );
