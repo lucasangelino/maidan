@@ -8,11 +8,7 @@ export default function Navbar() {
       <div>logo</div>
       <div className={actions}>
         <input className={searchbox} type="text" placeholder="Search" />
-        <div className={socialmedia}>
-          <div className={mediabutton}>
-            <Instragram height={40} />
-          </div>
-        </div>
+        <div className={socialmedia}></div>
       </div>
     </div>
   );
