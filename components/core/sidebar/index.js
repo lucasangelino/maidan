@@ -16,7 +16,7 @@ export default function Sidebar() {
       <div>
         <h4>Recomendaciones</h4>
       </div>
-      <div>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
         {recomendations.map((recom, index) => (
           <Card key={index} title />
         ))}
