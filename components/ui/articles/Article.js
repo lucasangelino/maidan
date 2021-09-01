@@ -3,7 +3,14 @@ import { useRouter } from "next/router";
 import { JavaScript, HTML, CSS, React, NodeJs } from "../icons/index";
 import styles from "./article.module.css";
 
-export default function Article({ title, content, readTime, topic, icon }) {
+export default function Article({
+  title,
+  content,
+  readTime,
+  topic,
+  icon,
+  difficulty,
+}) {
   const {
     article,
     readtime,
@@ -12,6 +19,7 @@ export default function Article({ title, content, readTime, topic, icon }) {
     article_title,
     article_desc,
   } = styles;
+
   const router = useRouter();
 
   const getArticleIcon = (topic) => {
@@ -30,14 +38,16 @@ export default function Article({ title, content, readTime, topic, icon }) {
     e.preventDefault();
     router.push(`/articles/[id]`, `/articles/${"id"}`);
   };
-  console.log(icon);
+
   return (
     <div className={article} onClick={handleArticleClick}>
       <div className={logo} style={{ backgroundColor: topic }}>
         {getArticleIcon(icon)}
       </div>
       <div className={article_content}>
-        <p className={readtime}>Tiempo de lectura {readTime} aprox</p>
+        <p
+          className={readtime}
+        >{`Tiempo de lectura ${readTime} aprox - dificultad ${difficulty}`}</p>
         <h3 className={article_title}>{title}</h3>
         <p className={article_desc}>{content}</p>
       </div>

@@ -3,16 +3,21 @@ export default function Articles({ articles }) {
   return (
     <div>
       <h1>Ultimos Articulos</h1>
-      {articles.map((article) => (
-        <Article
-          key={article.id}
-          title={article.title}
-          content={article.content}
-          readTime={article.readTime}
-          topic={article.topic}
-          icon={article.icon}
-        />
-      ))}
+      {articles.map((article) => {
+        const { id, title, content, readTime, topic, icon, difficulty } =
+          article;
+        return (
+          <Article
+            key={id}
+            title={title}
+            content={content}
+            readTime={readTime}
+            topic={topic}
+            icon={icon}
+            difficulty={difficulty}
+          />
+        );
+      })}
     </div>
   );
 }
