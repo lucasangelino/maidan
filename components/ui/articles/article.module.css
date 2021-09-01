@@ -5,7 +5,6 @@
   margin: 10px;
   background-color: #fff;
   border-radius: 8px;
-  background: lightsalmon;
 }
 .article:hover {
   background: lightgrey;
@@ -40,6 +39,5 @@
 }
 .article_container {
   width: 100%;
-  background: mediumpurple;
   padding: 10px;
 }
