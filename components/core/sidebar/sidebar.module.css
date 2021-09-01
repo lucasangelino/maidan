@@ -1,0 +1,13 @@
+.sidebar_container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 860px) {
+  .sidebar_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -7,10 +7,10 @@
   margin: 1em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .card {
     height: 15em;
-    width: 100%;
+    width: 80%;
     background-color: #d12727;
     border-radius: 5px;
   }

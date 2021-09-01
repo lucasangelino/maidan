@@ -9,16 +9,16 @@ export default function Layout({ children }) {
   return (
     <>
       <div className={container}>
-        <div className={navbar}>
+        {/* <div className={navbar}>
           <Navbar />
-        </div>
+        </div> */}
         <div className={content}>{children}</div>
         <div className={sidebar}>
           <Sidebar />
         </div>
-        <div className={footer}>
+        {/* <div className={footer}>
           <Footer />
-        </div>
+        </div> */}
       </div>
     </>
   );

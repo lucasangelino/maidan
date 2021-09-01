@@ -1,12 +1,11 @@
 .article {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  width: 100%;
-  min-width: 400px;
   display: flex;
   flex-direction: row;
-  margin: 10px 0;
+  margin: 10px;
   background-color: #fff;
   border-radius: 8px;
+  background: lightsalmon;
 }
 .article:hover {
   background: lightgrey;
@@ -38,4 +37,9 @@
 }
 .article_title {
   margin: 0;
+}
+.article_container {
+  width: 100%;
+  background: mediumpurple;
+  padding: 10px;
 }

@@ -84,4 +84,16 @@ const articles = [
   },
 ];
 
-export { filters, articles };
+const recomendations = [
+  {
+    title: "Recom1",
+  },
+  {
+    title: "Recom2",
+  },
+  {
+    title: "Recom2",
+  },
+];
+
+export { filters, articles, recomendations };
