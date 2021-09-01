@@ -1,10 +1,12 @@
 .navbar {
-  background: #f1f5f9;
   height: 79px;
-  padding: 0 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url("../../../pages/public/wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .actions {
