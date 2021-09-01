@@ -23,6 +23,7 @@
   align-items: center;
   justify-content: center;
   width: 70px;
+  padding: 10px;
   max-width: 100px;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;

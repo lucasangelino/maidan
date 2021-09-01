@@ -31,7 +31,8 @@ const articles = [
     title: "Tu primer App con ReactJs",
     content: "Creat una aplicacion con React en menos de 10 minutos...",
     readTime: "15 min",
-    topic: "#fae207",
+    topic: "#e3e3e3",
+    icon: "react",
   },
   {
     id: 1,
@@ -39,6 +40,7 @@ const articles = [
     content: "NodeJs nos permite crear servidores para nuestras aplica...",
     readTime: "15 min",
     topic: "#7FC728",
+    icon: "nodejs",
   },
   {
     id: 1,
@@ -46,13 +48,15 @@ const articles = [
     content: "Algunos basicos, otros extensos y poderosos. Prueba estos...",
     readTime: "15 min",
     topic: "#ff7b00",
+    icon: "misc",
   },
   {
     id: 1,
     title: "React - create-react-app vs webpack app",
     content: "Pros y contras de crear apps con create-react-app vs webp...",
     readTime: "15 min",
-    topic: "#fae207",
+    topic: "#e3e3e3",
+    icon: "react",
   },
   {
     id: 1,
@@ -61,6 +65,7 @@ const articles = [
       "Un juego que esconde secretos del universo. El juego de 0 jugadores",
     readTime: "20 min",
     topic: "#AE5CF7",
+    icon: "games",
   },
   {
     id: 1,
@@ -69,6 +74,7 @@ const articles = [
       "¿Inteligencia Artificial que programa? Skynet? Robots haciendo Robots?",
     readTime: "15 min",
     topic: "#040F46",
+    icon: "ia",
   },
 ];
 
