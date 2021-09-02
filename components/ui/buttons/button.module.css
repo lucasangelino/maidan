@@ -1,0 +1,11 @@
+.backbutton {
+  background-color: #33adff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+}
+
+.backbutton:hover {
+  cursor: pointer;
+}

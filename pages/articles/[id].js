@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import { BackButton } from "../../components/ui/buttons";
 
 export default function Article(props) {
   const [article, setArticle] = useState(null);
@@ -16,8 +18,13 @@ export default function Article(props) {
       .then((data) => setArticle(data));
   }, []);
 
+  const handleBackClick = () => {
+    router.push(`/`);
+  };
+
   return (
     <>
+      <BackButton onclick={handleBackClick} />
       <h1>Article</h1>
       {article && <ReactMarkdown children={article} />}
     </>
