@@ -1,5 +1,7 @@
 .footer {
-  background: #f1f5f9;
   /* Use same height as the navbar */
   height: 79px;
+  background-image: url("../../../pages/public/footer-wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

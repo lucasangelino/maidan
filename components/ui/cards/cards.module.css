@@ -6,8 +6,14 @@
   margin: 1em;
   position: relative;
 }
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .img {
   border-radius: 5px;
+}
+.img:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 860px) {

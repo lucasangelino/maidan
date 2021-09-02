@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../../pages/public/wave.svg");
+  background-image: url("../../../pages/public/navbar-wave.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
