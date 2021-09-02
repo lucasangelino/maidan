@@ -13,9 +13,9 @@ export default function Layout({ children }) {
           <Navbar />
         </div>
         <div className={content}>{children}</div>
-        <div className={sidebar}>
+        {/* <div className={sidebar}>
           <Sidebar />
-        </div>
+        </div> */}
         <div className={footer}>
           <Footer />
         </div>
