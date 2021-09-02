@@ -46,7 +46,7 @@ const articles = [
   },
   {
     id: 3000,
-    title: "5 Design Systems que deberias probar",
+    title: "Como usar Material UI sin morir en el intento",
     content: "Algunos basicos, otros extensos y poderosos. Prueba estos...",
     readTime: "15 min",
     topic: "#ff7b00",
@@ -65,8 +65,7 @@ const articles = [
   {
     id: 5000,
     title: "El Juego de la Vida",
-    content:
-      "Un juego que esconde secretos del universo. El juego de 0 jugadores",
+    content: "Un juego creado por John Horton Conway",
     readTime: "20 min",
     difficulty: "facil",
     topic: "#AE5CF7",
@@ -75,8 +74,7 @@ const articles = [
   {
     id: 6000,
     title: "Github Copilot",
-    content:
-      "¿Inteligencia Artificial que programa? Skynet? Robots haciendo Robots?",
+    content: "¿Inteligencia Artificial que programa?",
     readTime: "15 min",
     difficulty: "facil",
     topic: "#040F46",

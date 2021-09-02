@@ -1,0 +1,9 @@
+.article_content h1 {
+  color: #2270a3;
+}
+.article_content code {
+  background: rgb(207, 206, 206);
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #000;
+}
