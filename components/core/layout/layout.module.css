@@ -6,7 +6,7 @@
   grid-template-rows: auto;
   grid-template-areas:
     "header header header header"
-    "content content content sidebar"
+    "content content content content"
     "footer footer footer footer";
 }
 
