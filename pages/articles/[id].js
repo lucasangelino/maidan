@@ -5,24 +5,31 @@ import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { BackButton } from "../../components/ui/buttons";
+import SEO from "../../components/core/seo";
 import style from "./articlepage.module.css";
+import { SEO_PROPS } from "../../constants/seo";
 
 // TODO: Need to sanitize markdown content
 // import rehypeRaw from 'rehype-raw'
 
-export default function Article(props) {
-  const { article_content, image_cotainter } = style;
-  const [article, setArticle] = useState(null);
-  const ARTICLE_ID = `cc7575d896207997960cb5430a4ebbe4aa7b16c8`;
-  const URL = `
+const ARTICLE_ID = `cc7575d896207997960cb5430a4ebbe4aa7b16c8`;
+const URL = `
     https://gist.githubusercontent.com/lucasangelino/4630aec21dd5a6f7371b5be51d6e94a3/raw/${ARTICLE_ID}/article.md`;
+
+export default function Article(props) {
+  const { article } = SEO_PROPS;
+
+  const { article_content, image_cotainter } = style;
+  const [articleContent, setArticleContent] = useState(null);
+
   const router = useRouter();
+
   if (router.isFallback) return "Loading...";
 
   useEffect(() => {
     fetch(URL)
       .then((response) => response.text())
-      .then((data) => setArticle(data));
+      .then((data) => setArticleContent(data));
   }, []);
 
   const handleBackClick = () => {
@@ -31,11 +38,12 @@ export default function Article(props) {
 
   return (
     <>
+      <SEO {...article} />
       <BackButton onclick={handleBackClick} />
-      {article && (
+      {article_content && (
         <div className={article_content}>
           <ReactMarkdown
-            children={article}
+            children={articleContent}
             components={{
               img: ({ node, ...props }) => {
                 return (

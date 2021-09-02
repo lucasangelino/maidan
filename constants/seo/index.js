@@ -5,8 +5,8 @@ export const SEO_PROPS = {
     favicon: "favicon.ico",
   },
   article: {
-    title: "Article",
-    description: "Article App for developers",
+    title: "🐱‍🏍 Crea tu primer App con React",
+    description: "Crea tu primer App con React",
     favicon: "",
   },
 };
