@@ -7,3 +7,5 @@ Obtener una lista de los ultimos .mds
 Automatizar la creacion de .mds
 Agregar autores con fotos
 Agregar recomendaciones
+GetStaticProps
+Dynamic Imports
