@@ -43,7 +43,7 @@
       "footer";
     width: 100%;
   }
-  .sidebar {
+  .sidebar .navbar {
     width: 100%;
     margin: 0;
   }

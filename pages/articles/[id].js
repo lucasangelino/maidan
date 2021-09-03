@@ -19,7 +19,7 @@ const URL = `
 export default function Article(props) {
   const { article } = SEO_PROPS;
 
-  const { article_content, image_cotainter } = style;
+  const { article_content, image_cotainter, article_container } = style;
   const [articleContent, setArticleContent] = useState(null);
 
   const router = useRouter();
@@ -38,31 +38,33 @@ export default function Article(props) {
 
   return (
     <>
-      <SEO {...article} />
-      <BackButton onclick={handleBackClick} />
-      {article_content && (
-        <div className={article_content}>
-          <ReactMarkdown
-            children={articleContent}
-            components={{
-              img: ({ node, ...props }) => {
-                return (
-                  <div className={image_cotainter} {...props}>
-                    <Image
-                      src={
-                        "https://raw.githubusercontent.com/lucasangelino/maidan-img/main/imgs/react-toturial.png?token=AGX6FDQ5A7NUVPKKTYQCXITBHJSYA"
-                      }
-                      layout={`fill`}
-                      alt={`Image`}
-                    />
-                  </div>
-                );
-              },
-            }}
-            remarkPlugins={[remarkGfm]}
-          />
-        </div>
-      )}
+      <div className={article_container}>
+        <SEO {...article} />
+        <BackButton onclick={handleBackClick} />
+        {article_content && (
+          <div className={article_content}>
+            <ReactMarkdown
+              children={articleContent}
+              components={{
+                img: ({ node, ...props }) => {
+                  return (
+                    <div className={image_cotainter} {...props}>
+                      <Image
+                        src={
+                          "https://raw.githubusercontent.com/lucasangelino/maidan-img/main/imgs/react-toturial.png?token=AGX6FDQ5A7NUVPKKTYQCXITBHJSYA"
+                        }
+                        layout={`fill`}
+                        alt={`Image`}
+                      />
+                    </div>
+                  );
+                },
+              }}
+              remarkPlugins={[remarkGfm]}
+            />
+          </div>
+        )}
+      </div>
     </>
   );
 }

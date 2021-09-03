@@ -22,3 +22,6 @@
   width: 100%;
   align-items: center;
 }
+.article_container {
+  min-height: 100vh;
+}
