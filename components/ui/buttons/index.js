@@ -1,8 +1,12 @@
 import style from "./button.module.css";
 function BackButton({ onclick }) {
-  const { backbutton } = style;
+  const { button_continer, backbutton } = style;
 
-  return <button className={backbutton} onClick={onclick}>{`Back`}</button>;
+  return (
+    <div>
+      <button className={backbutton} onClick={onclick}>{`Back`}</button>
+    </div>
+  );
 }
 
 export { BackButton };

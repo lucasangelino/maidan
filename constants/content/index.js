@@ -8,20 +8,32 @@ const filters = [
     style: "#5ED3F3",
   },
   {
-    title: "Games",
+    title: "Gaming",
     style: "#AE5CF7",
   },
   {
-    title: "IA",
+    title: "Inteligencia Artificial",
     style: "#040F46",
   },
   {
-    title: "Misc",
+    title: "Otros",
     style: "#ff7b00",
   },
   {
     title: "Node",
     style: "#7FC728",
+  },
+  {
+    title: "CSS",
+    style: "#30A9DC",
+  },
+  {
+    title: "PHP",
+    style: "#777BB3",
+  },
+  {
+    title: "Laravel",
+    style: "#F72C1F",
   },
 ];
 

@@ -1,3 +1,6 @@
+.button_continer {
+  display: inline-block;
+}
 .backbutton {
   background-color: #33adff;
   color: #fff;

@@ -4,7 +4,7 @@ import SEO from "../components/core/seo";
 import Filters from "../components/ui/filters";
 import Articles from "../components/ui/articles";
 import { SEO_PROPS } from "../constants/seo";
-import { filters, articles } from "../constants/content";
+import { articles } from "../constants/content";
 
 export default function Home() {
   const { mainView } = SEO_PROPS;
@@ -12,7 +12,6 @@ export default function Home() {
     <>
       <SEO {...mainView} />
       <h4>Temas</h4>
-      <Filters filters={filters} />
       <Articles articles={articles} />
     </>
   );
