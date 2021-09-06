@@ -20,6 +20,7 @@
 .sidebar {
   grid-area: sidebar;
   margin: 0 auto;
+  width: 100%;
 }
 
 .content {
@@ -41,5 +42,10 @@
   .sidebar .navbar {
     width: 100%;
     margin: 0;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

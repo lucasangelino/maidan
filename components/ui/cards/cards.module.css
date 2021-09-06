@@ -1,6 +1,6 @@
 .card {
   height: 15em;
-  width: 20em;
+  width: 25em;
   background-color: #e3e3e3;
   border-radius: 5px;
   margin: 1em;
@@ -19,7 +19,6 @@
 @media screen and (max-width: 860px) {
   .card {
     height: 15em;
-    width: 80%;
     background-color: #e3e3e3;
     border-radius: 5px;
   }
