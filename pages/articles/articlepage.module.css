@@ -10,18 +10,19 @@
   border-radius: 5px;
   color: #000;
 }
-.article_content img {
-  height: 100px;
-  width: 100px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 .image_cotainter {
   position: relative;
   height: 500px;
-  width: 100%;
+  width: 600px;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+.image_cotainter img {
+  border-radius: 10px;
+}
+
 .article_container {
   min-height: 100vh;
 }

@@ -6,9 +6,7 @@ export default function Sidebar() {
   const { sidebar_container } = styles;
   return (
     <>
-      <div>
-        <h4>Recomendaciones</h4>
-      </div>
+      <h4>Recomendaciones</h4>
       <div className={sidebar_container}>
         {recomendations.map((recom, index) => (
           <Card key={index} title />

@@ -1,12 +1,11 @@
 .container {
-  margin: 0 auto;
-  padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "header header header header"
-    "content content content content"
+    ". content content sidebar"
     "footer footer footer footer";
 }
 
@@ -20,16 +19,12 @@
 
 .sidebar {
   grid-area: sidebar;
-  margin: 1em 5em;
+  margin: 0 auto;
 }
 
 .content {
   grid-area: content;
   margin: 0 auto;
-  height: 100%;
-  padding: 0;
-  width: 100%;
-  max-width: 50rem;
 }
 
 @media screen and (max-width: 860px) {
