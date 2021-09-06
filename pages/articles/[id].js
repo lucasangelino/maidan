@@ -12,9 +12,10 @@ import { SEO_PROPS } from "../../constants/seo";
 // TODO: Need to sanitize markdown content
 // import rehypeRaw from 'rehype-raw'
 
-const ARTICLE_ID = `cc7575d896207997960cb5430a4ebbe4aa7b16c8`;
-const URL = `
-    https://gist.githubusercontent.com/lucasangelino/4630aec21dd5a6f7371b5be51d6e94a3/raw/${ARTICLE_ID}/article.md`;
+const ARTICLE_ID = `850cb6b1ea204708ad616834dd5a150718c9d0fb`;
+// const URL = `
+//     https://gist.githubusercontent.com/lucasangelino/4630aec21dd5a6f7371b5be51d6e94a3/raw/${ARTICLE_ID}/article.md`;
+const URL = `http://localhost:5001/api/article/61368f8e8cc32d2a6e265921`;
 
 export default function Article(props) {
   const { article } = SEO_PROPS;
@@ -23,25 +24,23 @@ export default function Article(props) {
   const [articleContent, setArticleContent] = useState(null);
 
   const router = useRouter();
-
   if (router.isFallback) return "Loading...";
 
   useEffect(() => {
     fetch(URL)
-      .then((response) => response.text())
-      .then((data) => setArticleContent(data));
+      .then((response) => response.json())
+      .then((data) => setArticleContent(data.content));
   }, []);
 
   const handleBackClick = () => {
     router.push(`/`);
   };
-
   return (
     <>
       <div className={article_container}>
         <SEO {...article} />
         <BackButton onclick={handleBackClick} />
-        {article_content && (
+        {articleContent && (
           <div className={article_content}>
             <ReactMarkdown
               children={articleContent}
