@@ -11,7 +11,7 @@ export default function Sidebar() {
       <h4>Recomendaciones</h4>
       <div className={sidebar_container}>
         {recomendations.map((recom, index) => (
-          <Card key={index} title />
+          <Card key={index} title={recom.title} imgURL={recom.imgURL} />
         ))}
       </div>
     </>

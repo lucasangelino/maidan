@@ -8,17 +8,16 @@ export default function Articles({ articles }) {
       <h1>Ultimos Articulos</h1>
       <div className={article_container}>
         {articles.map((article) => {
-          const { id, title, content, readTime, topic, icon, difficulty } =
-            article;
+          const { id, title, comments, summary, tags, date } = article;
           return (
             <Article
               key={id}
               title={title}
-              content={content}
-              readTime={readTime}
-              topic={topic}
-              icon={icon}
-              difficulty={difficulty}
+              content={summary}
+              readTime={"10 min"}
+              topic={undefined || "react"}
+              icon={undefined || "react"}
+              difficulty={"easy"}
             />
           );
         })}

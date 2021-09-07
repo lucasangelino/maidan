@@ -13,8 +13,6 @@ import { SEO_PROPS } from "../../constants/seo";
 // import rehypeRaw from 'rehype-raw'
 
 const ARTICLE_ID = `850cb6b1ea204708ad616834dd5a150718c9d0fb`;
-// const URL = `
-//     https://gist.githubusercontent.com/lucasangelino/4630aec21dd5a6f7371b5be51d6e94a3/raw/${ARTICLE_ID}/article.md`;
 const URL = `http://localhost:5001/api/article/61368f8e8cc32d2a6e265921`;
 
 export default function Article(props) {
@@ -35,7 +33,7 @@ export default function Article(props) {
   const handleBackClick = () => {
     router.push(`/`);
   };
-  console.log(articleContent);
+
   return (
     <>
       <div className={article_container}>
@@ -47,7 +45,6 @@ export default function Article(props) {
               children={articleContent}
               components={{
                 img: ({ node, ...props }) => {
-                  console.log(node);
                   return (
                     <div className={image_cotainter} {...props}>
                       <img src={`${node.properties.src}`} alt={"Image"} />

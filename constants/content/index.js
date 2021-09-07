@@ -96,13 +96,12 @@ const articles = [
 
 const recomendations = [
   {
-    title: "Recom1",
+    title: "Bootcamp Fullstack JS",
+    imgURL: "https://img.youtube.com/vi/wTpuKOhGfJE/maxresdefault.jpg",
   },
   {
-    title: "Recom2",
-  },
-  {
-    title: "Recom2",
+    title: "Ionic Android - JS",
+    imgURL: "https://img.youtube.com/vi/JuYZ2xdHw3o/maxresdefault.jpg",
   },
 ];
 
