@@ -12,6 +12,7 @@ export default function Articles({ articles }) {
           return (
             <Article
               key={id}
+              id={id}
               title={title}
               content={summary}
               readTime={"10 min"}

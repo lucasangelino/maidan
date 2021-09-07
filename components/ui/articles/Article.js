@@ -4,6 +4,7 @@ import { JavaScript, HTML, CSS, React, NodeJs } from "../icons/index";
 import styles from "./article.module.css";
 
 export default function Article({
+  id,
   title,
   content,
   readTime,
@@ -36,7 +37,7 @@ export default function Article({
 
   const handleArticleClick = (e) => {
     e.preventDefault();
-    router.push(`/articles/[id]`, `/articles/${"id"}`);
+    router.push(`/articles/[id]`, `/articles/${id}`);
   };
 
   return (
