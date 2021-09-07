@@ -10,5 +10,6 @@ Agregar recomendaciones
 GetStaticProps
 Dynamic Imports
 Como dinamizar el SEO con el contenido de los articlos
+Cambiar el <img /> a <Image />
 
 Corregir el <p>

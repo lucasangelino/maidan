@@ -35,6 +35,7 @@ export default function Article(props) {
   const handleBackClick = () => {
     router.push(`/`);
   };
+  console.log(articleContent);
   return (
     <>
       <div className={article_container}>
@@ -46,15 +47,10 @@ export default function Article(props) {
               children={articleContent}
               components={{
                 img: ({ node, ...props }) => {
+                  console.log(node);
                   return (
                     <div className={image_cotainter} {...props}>
-                      <Image
-                        src={
-                          "https://raw.githubusercontent.com/lucasangelino/maidan-img/main/imgs/react-toturial.png?token=AGX6FDQ5A7NUVPKKTYQCXITBHJSYA"
-                        }
-                        layout={`fill`}
-                        alt={`Image`}
-                      />
+                      <img src={`${node.properties.src}`} alt={"Image"} />
                     </div>
                   );
                 },
