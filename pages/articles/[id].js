@@ -13,7 +13,7 @@ import { SEO_PROPS } from "../../constants/seo";
 // import rehypeRaw from 'rehype-raw'
 
 const ARTICLE_ID = `850cb6b1ea204708ad616834dd5a150718c9d0fb`;
-const URL = `http://localhost:5001/api/article/61368f8e8cc32d2a6e265921`;
+const URL = `http://localhost:5001/api/article`;
 
 export default function Article(props) {
   const { article } = SEO_PROPS;
@@ -22,10 +22,11 @@ export default function Article(props) {
   const [articleContent, setArticleContent] = useState(null);
 
   const router = useRouter();
+  const { id } = router.query;
   if (router.isFallback) return "Loading...";
 
   useEffect(() => {
-    fetch(URL)
+    fetch(`${URL}/${id}`)
       .then((response) => response.json())
       .then((data) => setArticleContent(data.content));
   }, []);

@@ -7,11 +7,11 @@ export default function Articles({ articles }) {
     <div>
       <h1>Ultimos Articulos</h1>
       <div className={article_container}>
-        {articles.map((article) => {
+        {articles.map((article, index) => {
           const { id, title, comments, summary, tags, date } = article;
           return (
             <Article
-              key={id}
+              key={index}
               id={id}
               title={title}
               content={summary}
