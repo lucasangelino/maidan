@@ -23,7 +23,7 @@ export default function Article(props) {
 
   const router = useRouter();
   const { id } = router.query;
-  if (router.isFallback) return "Loading...";
+  //if (router.isFallback) return "Loading...";
 
   useEffect(() => {
     fetch(`${URL}/${id}`)
