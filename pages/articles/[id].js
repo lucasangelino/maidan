@@ -43,6 +43,7 @@ export default function Article(props) {
         {articleContent && (
           <div className={article_content}>
             <ReactMarkdown
+              // eslint-disable-next-line react/no-children-prop
               children={articleContent}
               components={{
                 img: ({ node, ...props }) => {
